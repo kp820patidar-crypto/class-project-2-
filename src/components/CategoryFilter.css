@@ -1,0 +1,35 @@
+.cat-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cat-filter__btn {
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.cat-filter__btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: var(--accent-subtle);
+}
+
+.cat-filter__btn--active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 0 18px var(--accent-glow);
+}
+
+.cat-filter__btn--active:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
+}

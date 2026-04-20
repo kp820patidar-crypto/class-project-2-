@@ -1,0 +1,62 @@
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-elevated: #111111;
+  --bg-card: #141414;
+  --accent: #7c3aed;
+  --accent-light: #9f67ff;
+  --accent-subtle: rgba(124, 58, 237, 0.12);
+  --accent-glow: rgba(124, 58, 237, 0.35);
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #6b6b6b;
+  --border: #2a2a2a;
+  --border-accent: #3b2a5c;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --font-display: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --transition: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-elevated) 50%, var(--bg-card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@keyframes shimmer {
+  from { background-position: 200% 0; }
+  to { background-position: -200% 0; }
+}
